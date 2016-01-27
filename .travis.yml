@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.1.7
+cache: bundler
+script: bundle exec jekyll build
+after_success:
+  - git push --force --quiet "https://${GH_TOKEN}@github.com/moderndeveloper/recipes-styleguide.git" master:gh-pages > /dev/null 2>&1
+env:
+  global:
+    secure: JvDvGy4rXptnbJkBePA49xyGww1WQKnJVasTshkGxxv2moyU+d9Nkt7jjAIBFZIZPgGG8qW4ODZANhCDLkEqN+Q6e76sZTMli/0sr3G90ScSYVYpZSUQ99gza+osWDKIL2KlT9eDbnIbBcqr5KqE30GU9wIqpUXxxpjkx2AAvxrx46h0qKw+x9osuYEo7jHHAICsAKILJ6nUD0rv52fCNjhj165VODAJ8K+Xf6EmNLeN+/pi0eXeFdgNqLkllPFZRHSkOxuECAsD4RlkuKaSfYapt3Cgvid5saGGQu8M1rtjEuh6VJWkNchSe0u11WLHHAoG1/hgUrgR1O4c7kXzv8wACxYhbJA/wyFw3GBSJSJ2/0TSgXfGAnWRgcavcYR4jOgQ+fr/99rpivnsaMmBbsgVJkFBAVid/Ciaf8sNRFIHGuHNSKNrs+8/w7Z0tt5XKlPrTTLlwnqmYJYDoM32PG/VUGNjCRZdf13pGINt6jT1HwN1lx2q22WryQRVnPSuNDY3sNSgi1s8tp7UYmD3nuGrEfyL4Gp7G9twhR36u12XBHZWNDeb0yPaBuu5cDsuRTPoubNFYgqY6VBRD2nzWjauHe89+FUAfC6mE6SKnJId9U3OSJ9jNof4m+papb7QE+foWucHj7jmHp4G7LQO8XT06Kfm+cGwE11PGaqEcZo=
