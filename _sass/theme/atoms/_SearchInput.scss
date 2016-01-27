@@ -1,0 +1,23 @@
+.SearchInput--navigationbar {
+  font-size: 14px;
+  color: color(#FFFFFF);
+  background: color(#CC3526);
+  border: 1px solid color(#DB4334);
+  padding: 9px 18px 9px 60px;
+}
+
+.SearchInput--navigationbar::-webkit-input-placeholder {
+  color: color(#FAEBE9);
+}
+
+.SearchInput--navigationbar::-moz-placeholder {
+  color: color(#FAEBE9);
+}
+
+.SearchInput--navigationbar:-ms-input-placeholder {
+  color: color(#FAEBE9);
+}
+
+.SearchInput--navigationbar::placeholder {
+  color: color(#FAEBE9);
+}

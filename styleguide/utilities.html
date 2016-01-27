@@ -1,0 +1,157 @@
+---
+layout: styleguide
+---
+
+<div class="u-margin-horizontal--24">
+  <h1 class="u-margin-vertical--12">Utilities</h1>
+  <p class="u-margin-bottom--24">
+      Most of the time, CSS is taught to be abstracted into UI Components immediately upon needing it for the design of a site,
+      this approach tends to be bad as a team grows because if you have multiple people working on a project you might have implemented the CSS,
+      but someone who had to refactor it may not know all the inner workings of the CSS you wrote and then you have unused code in the codebase.
+      so rather than searching for CSS in multiple files and praying to the CSS gods that you don't miss the old code,
+      you should use utilities to build your components until you start to see duplication,
+      generally, if you see a component with the same CSS classes 3 times,
+      it's time to refactor into a proper component (component being Atom, Molecule or Organism)
+      the likelihood of you finding duplicated CSS classes in views is much higher than seeing CSS duplicated in your CSS partials
+      which make this allows you to have your code grow naturally over time and easily see when to clean up
+  </p>
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="background">background</h2>
+  <p class="u-margin-bottom--12">sets the background color of an element</p>
+</div>
+
+{% include styleguide/utilities/background.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="border">border</h2>
+  <p class="u-margin-bottom--12">sets the border of an element</p>
+</div>
+
+{% include styleguide/utilities/border.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="color">color</h2>
+  <p class="u-margin-bottom--12">sets the text color of an element</p>
+</div>
+
+{% include styleguide/utilities/color.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="display">display</h2>
+  <p class="u-margin-bottom--12">sets the display type of an element</p>
+</div>
+
+{% include styleguide/utilities/display.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="flex">flex</h2>
+  <p class="u-margin-bottom--12">sets the flex properties of an element used in conjunction with the display flex property</p>
+</div>
+
+{% include styleguide/utilities/flex.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="float">float</h2>
+  <p class="u-margin-bottom--12">sets the float direction of an element</p>
+</div>
+
+{% include styleguide/utilities/float.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="font">font</h2>
+  <p class="u-margin-bottom--12">sets the font properties of an element</p>
+</div>
+
+{% include styleguide/utilities/font.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="left">left</h2>
+  <p class="u-margin-bottom--12">sets the left position of an element used in conjunction with the position property</p>
+</div>
+
+{% include styleguide/utilities/left.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="margin">margin</h2>
+  <p class="u-margin-bottom--12">sets the margin of an element</p>
+</div>
+
+{% include styleguide/utilities/margin.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="overflow">overflow</h2>
+  <p class="u-margin-bottom--12">sets the overflow of an element</p>
+</div>
+
+{% include styleguide/utilities/overflow.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="padding">padding</h2>
+  <p class="u-margin-bottom--12">sets the padding of an element</p>
+</div>
+
+{% include styleguide/utilities/padding.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="position">position</h2>
+  <p class="u-margin-bottom--12">sets the position of an element</p>
+</div>
+
+{% include styleguide/utilities/position.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="text">text</h2>
+  <p class="u-margin-bottom--12">sets the text properties of an element</p>
+</div>
+
+{% include styleguide/utilities/text.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="vertical-align">vertical-align</h2>
+  <p class="u-margin-bottom--12">sets the vertical alignment of an element</p>
+</div>
+
+{% include styleguide/utilities/vertical-align.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="width">width</h2>
+  <p class="u-margin-bottom--12">sets the width of an element</p>
+</div>
+
+{% include styleguide/utilities/width.html %}
+
+<hr class="u-border-bottom-color--silver u-margin-vertical--24" />
+
+<div class="u-margin-horizontal--24">
+  <h2 class="u-margin-top--12 u-margin-bottom--6" id="z-index">z-index</h2>
+  <p class="u-margin-bottom--12">sets the z-index of an element used in conjunction with the position property</p>
+</div>
+
+{% include styleguide/utilities/z-index.html %}

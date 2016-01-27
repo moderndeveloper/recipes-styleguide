@@ -1,0 +1,45 @@
+$Switch--navigationbar-width: 34px;
+$Switch--navigationbar-thumb-size: 25px;
+$Switch--navigationbar-control-height: 18px;
+
+.Switch--navigationbar {
+  width: $Switch--navigationbar-width;
+  margin: 0 6px;
+}
+
+.Switch--navigationbar .Switch-control {
+  background-color: color(#A60F00);
+  display: block;
+  border-radius: 8px;
+  height: $Switch--navigationbar-control-height;
+  transition: background-color .15s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  will-change: background-color;
+}
+
+.Switch--navigationbar .Switch-thumb {
+  transform: translate(floor(($Switch--navigationbar-thumb-size - $Switch--navigationbar-width) / 2), floor(($Switch--navigationbar-control-height - $Switch--navigationbar-thumb-size) / 2));
+  background: color(#CC3526);
+  box-shadow: 0px 0px 2px 0px color(rgba(0,0,0, 0.12)),
+              0px 2px 4px 0px color(rgba(0,0,0, 0.24));
+  border-radius: 100%;
+  height: $Switch--navigationbar-thumb-size;
+  width: $Switch--navigationbar-thumb-size;
+  font-size: 10px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  transition: transform .15s cubic-bezier(0.250, 0.460, 0.450, 0.940),
+              background-color .15s cubic-bezier(0.250, 0.460, 0.450, 0.940),
+              color .15s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  will-change: transform, background-color, color;
+}
+
+.Switch--navigationbar .Switch-checkbox:checked ~ .Switch-control {
+  background-color: color(#CC3526);
+}
+
+.Switch--navigationbar .Switch-checkbox:checked ~ .Switch-control .Switch-thumb {
+  transform: translate($Switch--navigationbar-width + floor(($Switch--navigationbar-thumb-size - $Switch--navigationbar-width) * 2), floor(($Switch--navigationbar-control-height - $Switch--navigationbar-thumb-size) / 2));
+  background-color: color(#FFFFFF);
+  color: color(#C41200);
+}

@@ -1,0 +1,25 @@
+<nav class="u-bg-color--milano-red u-color--white u-padding-horizontal--20 u-padding-vertical--16 u-sm-padding-horizontal--24 u-sm-padding-vertical--14 u-display--flex u-align-items--center u-flex-wrap--nowrap">
+  <label class="u-display--flex u-align-items--center">
+    <i class="fa fa-bars u-font-size--24 u-margin-right--24"></i>
+    <span class="u-font-size--18">{{ include.title }}</span>
+  </label>
+  <div class="u-display--flex u-flex-grow--1 u-align-items--center">
+    <div class="WrapContainer WrapContainer--1200 u-sm-margin-left--146">
+      <div class="u-display--none u-sm-display--flex u-flex-grow--1 u-align-items--center u-position--relative">
+        <label for="search"><i class="fa fa-search u-font-size--18 u-position--absolute u-left--24 u-top--9"></i></label>
+        <input type="search" class="SearchInput SearchInput--navigationbar u-display--flex u-flex-grow--1" placeholder="Search" id="search" />
+      </div>
+    </div>
+  </div>
+  <div class="u-display--flex u-justify-content--flex-end u-align-items--center">
+    <div class="Switch Switch--navigationbar u-margin-horizontal--24">
+      <input type="checkbox" class="Switch-checkbox" id="navigationbar-switch">
+      <label for="navigationbar-switch" class="Switch-control">
+        <span class="Switch-thumb"><i class="fa fa-bookmark"></i></span>
+      </label>
+    </div>
+    <i class="fa fa-search u-font-size--24 u-margin-right--24 u-sm-display--none"></i>
+    <label for="filters-popover" class="Reveal-label"><i class="fa fa-filter u-font-size--24 u-margin-right--24"></i></label>
+    <label for="account-popover" class="Reveal-label"><img src="//placehold.it/48" alt="User photo" class="u-border-radius--full u-display--none u-sm-display--inline-block"></label>
+  </div>
+</nav>

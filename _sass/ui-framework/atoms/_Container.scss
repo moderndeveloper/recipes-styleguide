@@ -1,0 +1,25 @@
+.Container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .Container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Container {
+    max-width: 1440px;
+  }
+}

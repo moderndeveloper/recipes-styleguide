@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "settings/theme",
+        "ui-framework",
+        "mixins",
+        "functions",
+        "generics/Main",
+        "atoms/WrapContainer",
+        "molecules/AppContainer",
+        "theme/atoms/SearchInput",
+        "theme/molecules/Modal",
+        "theme/molecules/Popover",
+        "theme/molecules/Switch",
+        "theme/utilities/background-color",
+        "theme/utilities/border-color",
+        "theme/utilities/color",
+        "overrides"
+;

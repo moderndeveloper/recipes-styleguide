@@ -1,0 +1,45 @@
+.u-font-weight--bold {
+  font-weight: bold !important;
+}
+
+.u-font-size--10 {
+  font-size: 10px !important;
+}
+
+.u-font-size--12 {
+  font-size: 12px !important;
+}
+
+.u-font-size--13 {
+  font-size: 13px !important;
+}
+
+.u-font-size--14 {
+  font-size: 14px !important;
+}
+
+.u-font-size--16 {
+  font-size: 16px !important;
+}
+
+.u-font-size--18 {
+  font-size: 18px !important;
+}
+
+.u-font-size--24 {
+  font-size: 24px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .u-sm-font-size--18 {
+    font-size: 18px !important;
+  }
+
+  .u-sm-font-size--20 {
+    font-size: 20px !important;
+  }
+
+  .u-sm-font-size--24 {
+    font-size: 24px !important;
+  }
+}

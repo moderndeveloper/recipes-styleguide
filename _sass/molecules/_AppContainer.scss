@@ -1,0 +1,28 @@
+.AppContainer {
+    padding-top: 32px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.AppContainer-primary {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .AppContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .AppContainer,
+    .AppContainer-primary {
+        display: table-cell;
+    }
+
+    .AppContainer-secondary {
+        float: left;
+        width: 240px;
+        margin-right: 24px;
+    }
+}

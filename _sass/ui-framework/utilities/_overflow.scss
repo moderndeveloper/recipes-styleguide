@@ -1,0 +1,18 @@
+.u-overflow--hidden {
+  overflow: hidden !important;
+}
+
+
+.u-overflow-x--auto {
+    overflow-x: auto !important;
+}
+
+.u-overflow-x--hidden {
+    overflow-x: hidden !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .u-md-overflow-x--auto {
+        overflow-x: auto !important;
+    }
+}

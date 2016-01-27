@@ -1,0 +1,10 @@
+$color-pallete: () !global;
+
+@function color($color) {
+  @if map-has-key($color-pallete, $color) == false {
+    // @debug "#{$color}";
+    $color-pallete: map-merge($color-pallete, ($color: true)) !global;
+  }
+
+  @return $color;
+}

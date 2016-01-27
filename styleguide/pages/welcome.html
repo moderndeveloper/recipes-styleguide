@@ -1,0 +1,25 @@
+---
+layout: styleguide
+body_class: u-overflow-x--hidden u-position--relative u-width--full
+---
+
+{% include styleguide/organisms/Navigationbar.html title=site.title %}
+<div class="AppContainer">
+    <div class="AppContainer-secondary">
+        {% include styleguide/organisms/Sidebar.html %}
+    </div>
+    <div class="AppContainer-primary">
+        <div class="WrapContainer WrapContainer--1200">
+            {% include styleguide/organisms/BreadCrumbs.html %}
+            {% include styleguide/organisms/RecipeTable.html %}
+        </div>
+    </div>
+</div>
+<div class="Reveal">
+    <input type="checkbox" class="Reveal-checkbox" id="filters-popover" />
+    <div class="Reveal-content sm-Reveal-content--when-checked-display-block" style="width: 300px; position: absolute; top: 108px; right: 88px;">{% include styleguide/organisms/Popover--filters.html %}</div>
+</div>
+<div class="Reveal">
+    <input type="checkbox" class="Reveal-checkbox" id="account-popover" />
+    <div class="Reveal-content sm-Reveal-content--when-checked-display-block" style="width: 300px; position: absolute; top: 108px; right: 30px;">{% include styleguide/organisms/Popover--account.html %}</div>
+</div>

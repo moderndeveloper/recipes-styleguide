@@ -1,0 +1,48 @@
+// Generate color names here:
+// http://chir.ag/projects/name-that-color/
+
+.u-color--white {
+  color: color(#FFFFFF) !important;
+}
+
+.u-color--gray {
+  color: color(#7F7F7F) !important;
+}
+
+.u-color--dove-gray {
+  color: color(#616161) !important;
+}
+
+.u-color--mine-shaft {
+  color: color(#212121) !important;
+}
+
+.u-color--milano-red {
+  color: color(#C41200) !important;
+}
+
+// stateful colors
+
+.u-on-hover-color--milano-red:hover {
+  color: color(#C41200) !important;
+}
+
+.u-on-hover-color--buttercup:hover {
+  color: color(#F5A623) !important;
+}
+
+.u-on-focus-color--milano-red:focus {
+  color: color(#C41200) !important;
+}
+
+.u-on-focus-color--buttercup:focus {
+  color: color(#F5A623) !important;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .u-sm-color--gray {
+    color: color(#7F7F7F) !important;
+  }
+}

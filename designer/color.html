@@ -1,0 +1,22 @@
+---
+layout: styleguide
+---
+
+<div class="Container">
+  <h1>Color Name Generator</h1>
+  <input type="text" id="input" placeholder="#HEXCODE">
+  <br />
+  <output id="output"></output>
+  <script src="{{ "/js/ntc.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">
+    var input = document.getElementById('input');
+    var output = document.getElementById('output');
+    input.addEventListener('keyup', function(event) {
+      var match  = ntc.name(event.target.value);
+      var formattedString = "";
+      formattedString += match[2] ? 'Match: ' : 'Close Match (' + match[0] + '): ';
+      formattedString += match[1];
+      output.innerHTML = formattedString;
+    }, false);
+  </script>
+</div>

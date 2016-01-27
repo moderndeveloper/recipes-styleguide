@@ -1,0 +1,13 @@
+.u-position--relative {
+  position: relative !important;
+}
+
+.u-position--absolute {
+  position: absolute !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .u-md-position--absolute {
+    position: absolute !important;
+  }
+}

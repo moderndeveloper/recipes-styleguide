@@ -1,0 +1,15 @@
+.Media {
+  display: table;
+}
+
+.Media-object {
+  float: left;
+}
+
+.Media-body {
+  overflow: hidden;
+}
+
+.Media--reverse .Media-object {
+  float: right;
+}

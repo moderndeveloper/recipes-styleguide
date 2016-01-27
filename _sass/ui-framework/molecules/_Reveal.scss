@@ -1,0 +1,44 @@
+.Reveal-checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.Reveal-content {
+  display: none;
+}
+
+.Reveal-checkbox:focus ~ .Reveal-label {
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.Reveal-checkbox:checked ~ .Reveal-content--when-checked-display-none {
+  display: none;
+}
+
+.Reveal-checkbox:checked ~ .Reveal-content--when-checked-display-inline {
+  display: inline;
+}
+
+.Reveal-checkbox:checked ~ .Reveal-content--when-checked-display-inline-block {
+  display: inline-block;
+}
+
+.Reveal-checkbox:checked ~ .Reveal-content--when-checked-display-block {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .Reveal-checkbox:checked ~ .sm-Reveal-content--when-checked-display-block {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Reveal-checkbox:checked ~ .md-Reveal-content--when-checked-display-block {
+    display: block;
+  }
+}
