@@ -2,12 +2,17 @@
   border-radius: 100% !important;
 }
 
-.u-border-radius--2 {
-  border-radius: 2px !important;
+.u-border-top-radius--4 {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
 }
 
 .u-border-width--1 {
   border-width: 1px !important;
+}
+
+.u-border-radius--2 {
+  border-radius: 2px !important;
 }
 
 .u-border-style--solid {
