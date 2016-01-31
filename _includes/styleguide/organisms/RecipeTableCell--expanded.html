@@ -1,0 +1,57 @@
+<div class="u-bg-color--white u-color--mine-shaft u-position--relative" style="box-shadow: 0px -1px 0px 0px #E5E5E5, 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 4px 0px rgba(0,0,0,0.24);">
+  <div class="u-padding--12 u-sm-padding--24" style="box-sizing: border-box;">
+    <div class="u-clear--fix u-margin-bottom--24">
+      <ul class="BareList u-float--right">
+        <li class="BareList-item u-display--inline u-margin-right--12">
+          <a href="#" class="u-color--gray u-on-hover-color--buttercup u-on-focus-color--buttercup">
+            <span class="fa-stack u-font-size--12 u-vertical-align--middle">
+              <i class="fa fa-star fa-stack-2x"></i>
+              <span class="fa-stack-1x fa-star-text u-color--white u-font-size--10">5</span>
+            </span>
+          </a>
+        </li>
+        <li class="BareList-item u-display--inline u-margin-right--12">
+          <a href="#" class="u-color--gray u-on-hover-color--milano-red u-on-focus-color--milano-red">
+            <i class="fa fa-bookmark u-font-size--24 u-vertical-align--middle"></i>
+          </a>
+        </li>
+        <li class="BareList-item u-display--inline">
+          <label for="recipe-popover-{{include.index}}" class="Reveal-label u-color--gray">
+            <i class="fa fa-ellipsis-v u-font-size--24 u-vertical-align--middle"></i>
+          </label>
+        </li>
+      </ul>
+      <div class="Reveal">
+          <input type="checkbox" class="Reveal-checkbox" id="recipe-popover-{{include.index}}" />
+          <div class="Reveal-content md-Reveal-content--when-checked-display-block u-position--absolute u-z-index--1" style="width: 250px; top: 60px; right: 12px;">{% include styleguide/organisms/Popover--recipe.html %}</div>
+      </div>
+      <div class="u-font-weight--bold u-clear--none u-font-size--20">Ultra Creamy Mashed Potatoes</div>
+    </div>
+    <div class="u-margin-bottom--24">
+      {% include styleguide/molecules/Slideshow.html %}
+    </div>
+    <div class="u-clear--fix">
+      <div class="u-bg-color--concrete u-margin-bottom--24 u-sm-width--1of3 u-sm-float--right u-border-width--1 u-border-style--solid u-border-color--silver">
+        <div class="u-padding--12">
+          Ingredients
+        </div>
+        <ul class="BareList u-padding-top--12 u-border-width--1 u-border-style--solid u-border-top-color--silver">
+          <li class="BareList-item u-padding-horizontal--12 u-margin-bottom--12">1/2 cup light cream</li>
+          <li class="BareList-item u-padding-horizontal--12 u-margin-bottom--12">2 tablespoons butter</li>
+          <li class="BareList-item u-padding-horizontal--12 u-margin-bottom--12">2 cups Swanson® Chicken Broth or Swanson® Certified Organic Chicken Broth or Swanson® Natural Goodness® Chicken Broth</li>
+          <li class="BareList-item u-padding-horizontal--12 u-margin-bottom--12">6 Yukon Gold potatoes, peeled and cut into 1-inch pieces</li>
+        </ul>
+      </div>
+      <div class="u-margin-bottom--24 u-sm-width--2of3">
+        <p class="u-sm-font-size--18 u-margin-bottom--24">
+          The secret to making these potatoes extra-flavorful is cooking them in chicken broth.
+          They're mashed until perfectly smooth and creamy, with just the right amount of butter and cream to make a savory side everyone will enjoy.
+        </p>
+        <div class="u-font-size--14">
+          <p>You’ve made this: <strong>0</strong> times</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include styleguide/molecules/Comments.html %}
+</div>

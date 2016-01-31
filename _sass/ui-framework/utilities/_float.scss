@@ -20,6 +20,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .u-sm-float--left {
+    float: left !important;
+  }
+
   .u-sm-float--right {
     float: right !important;
   }

@@ -1,5 +1,5 @@
-.u-padding--10 {
-  padding: 10px !important;
+.u-padding--12 {
+  padding: 12px !important;
 }
 
 .u-padding--16 {
@@ -13,11 +13,6 @@
 .u-padding-vertical--6 {
   padding-top: 6px !important;
   padding-bottom: 6px !important;
-}
-
-.u-padding-vertical--10 {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
 }
 
 .u-padding-vertical--12 {
@@ -35,17 +30,12 @@
   padding-bottom: 24px !important;
 }
 
-.u-padding-horizontal--10 {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-
 .u-padding-horizontal--12 {
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
 
-.u-padding-horizontal--14 {
+.u-padding-horizontal--12 {
   padding-left: 14px !important;
   padding-right: 14px !important;
 }
@@ -58,6 +48,10 @@
 .u-padding-horizontal--24 {
   padding-left: 24px !important;
   padding-right: 24px !important;
+}
+
+.u-padding-top--12 {
+  padding-top: 12px !important;
 }
 
 @media screen and (min-width: 768px) {

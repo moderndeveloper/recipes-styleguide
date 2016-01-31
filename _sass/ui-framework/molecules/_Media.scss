@@ -1,5 +1,7 @@
 .Media {
   display: table;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Media-object {
@@ -12,4 +14,14 @@
 
 .Media--reverse .Media-object {
   float: right;
+}
+
+.Media--middle .Media-object,
+.Media--middle .Media-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.Media--middle .Media-body {
+  width: 100%;
 }
